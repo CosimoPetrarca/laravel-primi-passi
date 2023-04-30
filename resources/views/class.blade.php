@@ -6,10 +6,11 @@
 </head>
 
 <body>
-    <h1>HELLO WORLD!</h1>
-    <p>{{$title}}</p>
-    <p>Benevenuti nella Classe {{$num}}!</p>
-    <p>Se avete dei dubbi rivolgetevi a <a href="class">{{$person}}</a>, lui si che vi darà due dritte!</p>
+    <h1>{{$title}}</h1>
+    <img src="{{ asset('img/vieni.jpg') }}" alt="foto">
+    <p>{{$text}}</p>
+    <a href="/">{{$back}}</a>
+    
 </body>
 
 </html>
