@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
      $data = [
-        'title' => 'Usiamo Laravel in maniera super facile',
+        'title' => 'Prove ignoranti di Laravel',
         'num' => 89,
         'person' => 'Cosimo Petrarca'
     ];
@@ -33,4 +33,47 @@ Route::get('/class', function () {
    ];
 
    return view('class', $data);
+});
+
+Route::get('/list', function () {
+
+    $names = [
+        'Claudio Salvatore Aiello',
+        'Davide Atzori',
+        'Roy Ettore Junior Bagnarola',
+        'Daniele Balestro',
+        'Bimal Benvenuti',
+        'Filippo Bonafini',
+        'Luca Brivio',
+        'Luca Collaro',
+        'Nicholas Conti',
+        'Vittorio Corradi',
+        'Rosa Durantini',
+        'Danilo Eberli',
+        'Marco Ferrari',
+        'Mattia Fezzardi',
+        'Giovanni Franchi',
+        'Giorgia Galbulli Cavazzini',
+        'Maurizio Gallotti',
+        'Alberto Gioia',
+        'Mikel Gremi',
+        'Alessandro Iero',
+        'Marcello Leone',
+        'Gaspare Monte',
+        'Luca Paolella',
+        'Cosimo Petrarca',
+        'Gianluca Pinna',
+        'Ivan Rizzo',
+        'Vittoria Romano',
+        'Eugenia Rossi',
+        'Massimiliano Sabatino',
+        'Leonardo Sallustio',
+        'Giulia Tognali',
+        'Agatino Tringali',
+        'Riccardo Turella',
+        'Emanuele Volpes',
+        'Luca Zanfrisco',
+    ];
+
+   return view('list', ['names' => $names]);
 });

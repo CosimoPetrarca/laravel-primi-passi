@@ -23,7 +23,7 @@
     <body class="antialiased">
        <h1>HELLO WORLD!</h1>
        <p>{{$title}}</p>
-       <p>Benevenuti nella Classe {{$num}}!</p>
+       <p>Benevenuti nella <a href="list">Classe {{$num}}</a>!</p>
        <p>Se avete dei dubbi rivolgetevi a <a href="class">{{$person}}</a>, lui si che vi darà due dritte!</p>
     </body>
 </html>
